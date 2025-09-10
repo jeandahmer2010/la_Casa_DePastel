@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La casa de Pastel</title>
+    <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #relatorio, #relatorio * {
+        visibility: visible;
+      }
+      #relatorio {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <form id="FormPastel" action="#" method="post">
+        <label for="nome">Nome do Cliente: </label>
+        <input type="text" name="Nome" id="nome" placeholder="Seu Nome">
+        <br>
+        <br>
+
+        <label for="cpf">CPF: </label>
+        <input type="text" name="cpf" id="cpf" placeholder="Seu CPF">
+        <br>
+        <br>
+
+        <label for="endereco">Endereço: </label>
+        <input type="text" name="endereço" id="endereco" placeholder="Seu Endereço">
+        <br>
+        <br>
+
+        <label for="cardapio">Pastel: </label>
+            <select id="cardapio" name="cardapio"></select>
+        <br>
+        <br>
+
+        <label for="cardapioww">Pastel: </label>
+            <select id="cardapioww" name="cardapioww"></select>
+        <br>
+        <br>
+
+        <label for="acompanhantee">Acompanhante: </label>
+            <select id="acompanhantee" name="acompanhantee"></select>
+        <br>
+        <br>
+
+        <label for="tamanho">Tamanho: </label>
+            <select id="tamanho" name="tamanho"></select>
+        <br>
+        <br>
+
+        <label for="entrega">Entrega ou Busca: </label>
+             <select name="entrega" id="entrega"></select>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Forma de Pagamento: </legend>
+
+            <label>
+                <input type="radio" name="pagamento" value="Pix" id="pagamentow">
+                Pix
+            </label>
+
+            <label>
+                <input type="radio" name="pagamento" value="Debito" id="pagamentow">
+                Débito
+            </label>
+
+            <label>
+                <input type="radio" name="pagamento" value="Credito" id="pagamentow">
+                Crédito
+            </label>
+
+            <label>
+                <input type="radio" name="pagamento" value="Dinheiro" id="pagamentow">
+                Dinheiro
+            </label>
+        </fieldset>
+        
+        <br>
+        <hr>
+        <h2>Informações Importantes</h2>
+
+        <label for="enderecoo">Endereço do Estabelecimento: </label>
+        <input type="text" id="enderecoo" name="endereçoo" value="Rua Lisboa, 435 - Jardim Panorama" readonly>
+        
+        <br>
+        <br>
+
+        <label for="numeroo">Número de Telefone do Estabelecimento: </label>
+        <input type="text" id="numeroo" name="numeroo" value="(45)9914501514" readonly>
+    </form>
+
+
+         <hr> 
+         <div id="relatorio"></div>
+         <br>
+         <button onclick="gerarRelatorio()">Gerar relatório do Pedido</button>
+    
+
+    <br>
+    <button onclick="window.print()">Gerar PDF do relatório</button>
+    <script src="script.js"></script>     
+</body>
+</html>
