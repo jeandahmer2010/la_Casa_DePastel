@@ -1,6 +1,10 @@
 const combo_loja = [
     { id: "Carne", pastel: " Pastel de carne - R$ 15.00", preco: 15.00                     },
-    { id: "Frango", pastel: "Pastel de Frango - R$ 15.00", preco: 15.00}
+    { id: "Frango", pastel: "Pastel de Frango - R$ 15.00", preco: 15.00                    },
+    { id: "Queijo", pastel: "Pastel de queijo - R$ 15.00", preco: 15.00                    },
+    { id: "CarneQueijo", pastel: "Pastel de Carne com Queijo - R$15.00", preco: 15.00      },
+    { id: "chocolate", pastel: "Pastel de chocolate - R$ 20.00", preco:  20.00             },
+    { id: "Cheddar", pastel: "Pastel de Carne com Cheddar - R$ 20.00", preco: 20.00        },
 
 
 
@@ -90,6 +94,14 @@ function preencher(){
          option.textContent = item.tipo.trim();
          selectEntrega.appendChild(option);
      }
+      const selectcombo = document.getElementById("combo");
+       for (let i = 0; i < combo_loja.length; i++) {
+         const item = combo_loja[i];
+         const option = document.createElement("option");
+         option.value = item.id;
+         option.textContent = item.pastel;
+         selectcombo.appendChild(option);
+    }
 }
 preencher();
 
