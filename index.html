@@ -13,6 +13,8 @@
     </header>
 </main>
     <form id="FormPastel" action="#" method="post">
+        <hr>
+        <h2>Informações Do Cliente</h2>
         <label for="nome">Nome do Cliente: </label>
         <input type="text" name="Nome" id="nome" placeholder="Seu Nome">
         <br>
@@ -27,53 +29,55 @@
         <input type="text" name="endereço" id="endereco" placeholder="Seu Endereço">
         <br>
         <br>
-
+        <hr>
+        
+        <h2>Cardápio</h2>
         <label for="cardapio">Pastel: </label>
-            <select id="cardapio" name="cardapio"></select>
-        <br>
-        <br>
+         <select id="cardapio" name="cardapio"></select>
+         <input type="number" id="qtdCardapio" value="1" min="0">
+        <br><br>
 
-        <label for="cardapioww">Pastel: </label>
-            <select id="cardapioww" name="cardapioww"></select>
-        <br>
-        <br>
+        <label for="cardapioww">Outro Pastel: </label>
+         <select id="cardapioww" name="cardapioww"></select>
+         <input type="number" id="qtdCardapio2" value="1" min="0">
+       <br><br>
+
+       <label for="cardapioww">combo:</label>
+       <select name="combo" id="combo"></select>
+       <input type="number" value="combo">
 
         <label for="acompanhantee">Acompanhante: </label>
-            <select id="acompanhantee" name="acompanhantee"></select>
-        <br>
-        <br>
+         <select id="acompanhantee" name="acompanhantee"></select>
+         <input type="number" id="qtdAcompanhante" value="1" min="0">
+       <br><br>
 
         <label for="tamanho">Tamanho: </label>
-            <select id="tamanho" name="tamanho"></select>
-        <br>
-        <br>
+         <select id="tamanho" name="tamanho"></select>
+        <br><br>
 
         <label for="entrega">Entrega ou Busca: </label>
              <select name="entrega" id="entrega"></select>
         <br>
         <br>
+        <hr>
 
         <fieldset>
             <legend>Forma de Pagamento: </legend>
 
             <label>
-                <input type="radio" name="pagamento" value="Pix" id="pagamentow">
-                Pix
+              Pix<input type="radio" name="pagamento" value="Pix" id="pagamentow">
             </label>
 
             <label>
-                <input type="radio" name="pagamento" value="Debito" id="pagamentow">
-                Débito
+              Débito<input type="radio" name="pagamento" value="Debito" id="pagamentow">
             </label>
 
             <label>
-                <input type="radio" name="pagamento" value="Credito" id="pagamentow">
-                Crédito
+              Crédito<input type="radio" name="pagamento" value="Credito" id="pagamentow">
             </label>
 
             <label>
-                <input type="radio" name="pagamento" value="Dinheiro" id="pagamentow">
-                Dinheiro
+               Dinheiro<input type="radio" name="pagamento" value="Dinheiro" id="pagamentow">
             </label>
         </fieldset>
         
@@ -89,6 +93,10 @@
 
         <label for="numeroo">Número de Telefone do Estabelecimento: </label>
         <input type="text" id="numeroo" name="numeroo" value="(45)9914501514" readonly>
+
+        
+
+</p>
     </form>
 
 
