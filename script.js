@@ -1,40 +1,30 @@
-const combo_loja = [
-    { id: "Carne", pastel: " Pastel de carne - R$ 15.00", preco: 15.00                     },
-    { id: "Frango", pastel: "Pastel de Frango - R$ 15.00", preco: 15.00                    },
-    { id: "Queijo", pastel: "Pastel de queijo - R$ 15.00", preco: 15.00                    },
-    { id: "CarneQueijo", pastel: "Pastel de Carne com Queijo - R$15.00", preco: 15.00      },
-    { id: "chocolate", pastel: "Pastel de chocolate - R$ 20.00", preco:  20.00             },
-    { id: "Cheddar", pastel: "Pastel de Carne com Cheddar - R$ 20.00", preco: 20.00        },
-
-
-
-]; 
-
-
-
 const cardapio_loja = [
-    { id: "Carne", pastel: " Pastel de Carne - R$ 15.00 ", preco: 15.00                  },
-    { id: "Frango", pastel: " Pastel de Frango - R$ 15.00 ", preco: 15.00                },
-    { id: "Queijo", pastel: " Pastel de Queijo - R$ 15.00 ", preco: 15.00                },
-    { id: "CarneQueijo", pastel: " Pastel de Carne com Queijo - R$ 15.00 ", preco: 15.00 },
-    { id: "Chocolate", pastel: " Pastel de Chocolate - R$ 20.00 ", preco: 20.00          },
-    { id: "Cheddar", pastel: " Pastel de Carne com Cheddar - R$ 20.00 ", preco: 20.00    }
+    { id: "Carne", pastel: " Pastel de Carne - R$3,99 ", preco: 3.99                  },
+    { id: "Frango", pastel: " Pastel de Frango - R$3,99 ", preco: 3.99                },
+    { id: "Chocolate", pastel: " Pastel de Chocolate - R$6,99 ", preco: 6.99          },
+    { id: "ChocolateMorango", pastel: " Pastel de Chocolate com Morango - R$6,99 ", preco: 6.99   },
+    { id: "Queijo", pastel: " Pastel de Queijo - R$3,99 ", preco: 3.99                },
+    { id: "CarneQueijo", pastel: " Pastel de Carne com Queijo - R$3,99 ", preco: 3.99 },
+    { id: "Cheddar", pastel: " Pastel de Carne com Cheddar - R$6,99 ", preco: 6.99    },
+    { id: "frangocatupiri", pastel: " Pastel de Frango com Catupiri - R$6,99 ", preco: 6.99    }
 ];
 
 const cardapio_loja_2 = [
-    { id: "Carne", pastel: " Pastel de Carne - R$ 15.00 ", preco: 15.00                  },
-    { id: "Frango", pastel: " Pastel de Frango - R$ 15.00 ", preco: 15.00                },
-    { id: "Queijo", pastel: " Pastel de Queijo - R$ 15.00 ", preco: 15.00                },
-    { id: "CarneQueijo", pastel: " Pastel de Carne com Queijo - R$ 15.00 ", preco: 15.00 },
-    { id: "Chocolate", pastel: " Pastel de Chocolate - R$ 20.00 ", preco: 20.00          },
-    { id: "Cheddar", pastel: " Pastel de Carne com Cheddar - R$ 20.00 ", preco: 20.00    },
-    { id: "Nada", pastel: " Nada - R$ 0.00 ", preco: 0.00                                }
+    { id: "Carne", pastel: " Pastel de Carne - R$3,99 ", preco: 3.99                  },
+    { id: "Frango", pastel: " Pastel de Frango - R$3,99 ", preco: 3.99                },
+    { id: "Chocolate", pastel: " Pastel de Chocolate - R$6,99 ", preco: 6.99          },
+    { id: "ChocolateMorango", pastel: " Pastel de Chocolate com Morango - R$6,99 ", preco: 6.99   },
+    { id: "Queijo", pastel: " Pastel de Queijo - R$3,99 ", preco: 3.99                },
+    { id: "CarneQueijo", pastel: " Pastel de Carne com Queijo - R$3,99 ", preco: 3.99 },
+    { id: "Cheddar", pastel: " Pastel de Carne com Cheddar - R$6,99 ", preco: 6.99    },
+    { id: "frangocatupiri", pastel: " Pastel de Frango com Catupiri - R$6,99 ", preco: 6.99    }
 ];
 
 const tamanho_loja = [
-    { id: "Pequeno", tamanho: " Pequeno - R$ 5.00 ", preco: 5.00 },
-    { id: "Médio", tamanho: " Médio - R$ 7.00 ", preco: 7.00     },
-    { id: "Grande", tamanho: " Grande - - R$ 10.00 ", preco: 10.00  }
+    { id: "Pequeno", tamanho: " Pequeno ", preco: 2.50 },
+    { id: "Médio", tamanho: " Médio ", preco: 5.00     },
+    { id: "Grande", tamanho: " Grande ", preco: 10.00  },
+    { id: "Gigante", tamanho: " Gigante ", preco: 12.00  }
 ];
 
 const entrega_loja = [
@@ -45,8 +35,7 @@ const entrega_loja = [
 const acompanhante_loja = [
     { id: "Caldo de Cana", acompanhante: "Caldo de Cana - R$ 5.00 ", preco: 5.00},
     { id: "Suco Natural", acompanhante: "Suco Natural - R$ 3.00 ", preco: 3.00  },
-    { id: "Refrigerante", acompanhante: "Refrigerante - R$ 7.00 ", preco: 7.00  },
-    { id: "Nada", acompanhante: "Nenhum - R$ 0.00 ", preco: 0.00                }
+    { id: "Refrigerante", acompanhante: "Refrigerante - R$ 7.00 ", preco: 7.00  }
 ];
 
 function preencher(){
@@ -94,14 +83,6 @@ function preencher(){
          option.textContent = item.tipo.trim();
          selectEntrega.appendChild(option);
      }
-      const selectcombo = document.getElementById("combo");
-       for (let i = 0; i < combo_loja.length; i++) {
-         const item = combo_loja[i];
-         const option = document.createElement("option");
-         option.value = item.id;
-         option.textContent = item.pastel;
-         selectcombo.appendChild(option);
-    }
 }
 preencher();
 
@@ -113,6 +94,12 @@ function procurarPorId(lista, idProcurado) {
     }
     return null;
 }
+function adicionarcombos(comboprettygirl )
+
+
+
+
+
 
 function gerarRelatorio() {
     const PagamentoId = document.querySelector('input[name="pagamento"]:checked')?.value || "Indefinido...";
@@ -148,13 +135,15 @@ function gerarRelatorio() {
        <p><strong>Endereço: </strong> ${enderecoId} </p>
        <p><strong>Pastel: </strong> ${cardapioId} x${qtdCardapio} = R$ ${(cardapioo.preco * qtdCardapio).toFixed(2)}  </p>
        <p><strong>Outro Pastel: </strong> ${cardapioId_2} x${qtdCardapio2} = R$ ${(cardapioww.preco * qtdCardapio2).toFixed(2)}  </p>
-       <p><strong>Acompanhante: </strong> ${acompanhanteId} x${qtdAcompanhante} = R$ ${(acompanhantee.preco * qtdAcompanhante).toFixed(2)}  </p>
+       <p><strong>Acompanhamento: </strong> ${acompanhanteId} x${qtdAcompanhante} = R$ ${(acompanhantee.preco * qtdAcompanhante).toFixed(2)}  </p>
        <p><strong>Tamanho: </strong> ${tamanhoId} = R$ ${tamanhoo.preco.toFixed(2)} </p>
        <p><strong>Modo de Recebimento: </strong> ${entregaId} = R$ ${entregaa.preco.toFixed(2)} </p>
        <p><strong>Preço Total: </strong> R$ ${total.toFixed(2)} </p>
        <p><strong>Modo de Pagamento: </strong> ${PagamentoId}</p>
-       <p>Obrigado por usar o relatório da Lá Casa de Pastel!</p>
+       <p>Obrigado pela preferencia!</p>
+       
     `;
+
+    document.getElementById("relatorio").innerHTML = relatorioHTML; 
     
-    document.getElementById("relatorio").innerHTML = relatorioHTML;
 }

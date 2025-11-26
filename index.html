@@ -8,8 +8,10 @@
 </head>
 <body>
 <main>
+
     <header>
-        <img class="logo" src="imagens/logo" alt="logotipo">
+    <img class="logo" src="imagens/logo" alt="logotipo">
+
     </header>
 </main>
     <form id="FormPastel" action="#" method="post">
@@ -30,25 +32,21 @@
         <br>
         <br>
         <hr>
-        
+
         <h2>Cardápio</h2>
         <label for="cardapio">Pastel: </label>
          <select id="cardapio" name="cardapio"></select>
-         <input type="number" id="qtdCardapio" value="1" min="0">
+         <input type="number" id="qtdCardapio" value="1" min="1" max="10">
         <br><br>
 
         <label for="cardapioww">Outro Pastel: </label>
          <select id="cardapioww" name="cardapioww"></select>
-         <input type="number" id="qtdCardapio2" value="1" min="0">
+         <input type="number" id="qtdCardapio2" value="1" min="0" max="10">
        <br><br>
 
-       <label for="cardapioww">combo:</label>
-       <select name="combo" id="combo"></select>
-       <input type="number" value="combo">
-
-        <label for="acompanhantee">Acompanhante: </label>
+        <label for="acompanhantee">Acompanhamento: </label>
          <select id="acompanhantee" name="acompanhantee"></select>
-         <input type="number" id="qtdAcompanhante" value="1" min="0">
+         <input type="number" id="qtdAcompanhante" value="1" min="0" max="5">
        <br><br>
 
         <label for="tamanho">Tamanho: </label>
@@ -109,6 +107,10 @@
     <br>
     <button onclick="window.print()">Gerar PDF do relatório</button>
     <script src="script.js"></script>
+    </main>
+</body>
+</html>
+
     </main>
 </body>
 </html>
